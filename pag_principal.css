@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Menu Topo */
+.menu-topo {
+    position: relative;
+    bottom: 50px;
+    border-bottom: 2px solid #8861d6;
+    background-image: linear-gradient(#9c80d4, #ffffff);
+}
+/*Logo no canto superio esquerdo*/
+.logo{
+    position: relative;
+    top: 25px;
+}
+/*nav dos links da parte superior do site*/
+.links-menu{
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+}
+
+/* botões no parte superio do site*/
+.links-menu a {
+    color: rgb(5, 5, 5);
+    padding: 0px 15px 15px 5px;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    font-size: 15px;
+    min-width: 500px;
+    text-decoration: none;
+    max-width: 500px;
+}
+.links-menu a:hover {
+    color: #8861d6;
+    height: 10px;
+    padding: 5px 10px 0 10px;
+}
+
+
+/* Icon Login */
+#login{
+    position: absolute;
+    right: 70px; /* distância da borda direita */
+    top: 65px;   /* ajuste vertical conforme necessário */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    font-size: 70px;
+    color: #362755;
+    bottom: auto;
+    max-width: 500px;
+}
+
+#login:hover {
+    color: #8861d6;
+    transition-duration: 360ms;
+}
+
+#bars{
+    font-size: 65px;
+    position: absolute;
+    right: 10px;
+    top: 75px;
+    color: #362755;
+}
+
+#bars:hover{
+    color: #8861d6;
+    cursor: pointer;
+    transition-duration: 360ms;
+}
+nav ul{
+    width: 100%;
+    text-align: center;
+    font-size: medium;
+    background-color: rgb(255, 253, 253);
+    padding: 10px;
+    position: absolute;
+    top: 139px;  
+    display: none;     
+    columns: 3;
+    border-bottom: 2px solid #8861d6;
+    border-radius: 20px;
+
+}
+
+nav ul a:hover {
+    color: #8861d6;
+}
+
+
+nav ul a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+}
+
+
+#HOME {
+
+
+}
+#HOME a {
+
+
+
+}
+
+
+#PRODUTOS {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+
+
+}
+
+#PRODUTOS a {
+
+    text-decoration: none;
+    color: black;
+}
+
+#ESTOQUE {
+    display: none;
+}
+
+#FALE_CONOSCO {
+    display: none;
+
+}
+
+.fa-solid.fa-angle-up{    
+    font-size: 16px;     /* muda o tamanho */
+    margin-left: 1px;    /* espaço à esquerda */
+}
+.fa-solid.fa-angle-down{   
+    font-size: 16px;     /* muda o tamanho */
+    margin-left: 1px;    /* espaço à esquerda */
+}
+
+.fa-solid.fa-angle-down:hover{
+    color: #8861d6;
+}
+
+
+/*abaixo e o catalogo de roupas*/
+
+#thug {
+    background-color: transparent;
+    border: 1px solid #312842;
+    margin: auto;
+    text-align: center;
+    max-width: 650px;
+    min-width: 350px;
+    padding: 30px 10px 15px 10px;
+    margin-bottom: 5cm;
+    margin-top: 25px;
+}
+
+#thug h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: #000000;
+    padding-bottom: 20px;
+}
+
+#thug img {
+    padding: 10px 10px 100px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.041);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+}
+
+#thug img:hover {
+    transform: scale(1.1);
+    transition-duration: 360ms;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+section{
+    background-color: aqua;
+    width: 100%;
+}
+
+/*#barra-pesquisa{
+    position: absolute;
+    right: 0px;  distância da borda direita 
+    top:139px;    ajuste vertical conforme necessário 
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    color: #362755;
+    bottom: auto;
+    max-width: 500px;
+    border: 2px solid #8861d6;
+    border-bottom-left-radius: 15px;
+    outline: none;
+    max-width: 750px;
+    min-width: 250px;
+
+
+}
+#barra-pesquisa:hover{
+    background-color: rgb(240, 240, 240);
+
+}   */
+
+.container{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(0, 0, 0, 0.021);
+    width: 250px;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
+    align-items: center;
+    margin: 0;
+}
+.container .img{
+    align-items: center;
+
+}
+.img{
+    background-color: #f7cbba;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 231px;
+    height: 120px;
+    cursor: pointer;
+
+
+}
+@keyframes img {
+    0%{
+        transform: translate(1);
+    }
+    100%{
+        transform: translateY(-25%);
+        
+    }
+
+    
+}
+.img:hover{
+
+    animation: img 1s forwards;
+
+}
+
+.ttl{
+    font-size: 22px;
+    margin-top: 15px;
+
+}
+.p{
+    font-family:"Ubuntu", sans-serif;
+    font-size: 17px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.247);
+    text-align: left;
+    margin-left: 15px;
+
+}
+.dn{
+    font-family:"Ubuntu", sans-serif;
+    font-size: 27px;
+    padding-top: 8px;
+    padding-left: 10px;
+    align-items: left;
+    text-align: left;
+    margin-left: 5px;
+}
+i{
+    position: relative;
+    bottom: 43px;
+    left: 94px;
+    padding: 10px;   
+    border-radius: 50%;
+    font-size: 22px;
+}
+i:hover{
+    transition: 360ms;
+    background-color: #f7cbba;
+
+    
+}

@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    /* ou font-family: "Ubuntu", sans-serif;*/
+
+}
+
+body{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+
+
+}
+.container{
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    padding: 0px 15px 0 15px;
+    border-radius: 10px;
+    height: 12cm;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@keyframes ho{
+    from{
+
+    }
+    to{
+        background-color: rgb(245, 245, 245);
+    }
+
+}
+
+@keyframes reload{
+    0%{
+        transition-property: border;
+        transform: rotate(0);
+    }
+    100%{
+        transition-property: border;
+        transform: rotate(349deg);
+    }
+
+}
+.cir{
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: 3px solid transparent;/*#4973C1*/
+    border-top: 3px solid #007090;
+    border-right: 3px solid #007090;
+    border-left: 3px solid #007090;    
+    border-radius: 50%;
+    animation: reload 700ms linear  infinite;
+    transition-timing-function: ease-in;
+    position: relative;
+    top: 57px;
+    
+}
+
+
+
+.REGISTRAR>h1{
+    color: #007090;
+    font-size: 40px;
+    margin: 13px 0 0 0;
+    font-family: 'Poppins',sans-serif;
+    position: relative;
+    left: 43px;
+
+
+
+    
+}
+.REGISTRAR>p{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 5px 0 20px 0;
+}
+
+.nome1{
+    width: 167px;
+    border: 1px solid rgba(0, 0, 0, 0.281);
+    border-radius: 7px;
+    margin-right: 3px;
+    margin-bottom: 10px;
+    padding: 15px 0 10px 5px;
+    font-size: 15px;
+    outline: none;
+}
+.nome1:hover{
+    animation: ho 360ms linear forwards
+
+
+}
+
+.email{
+    width: 350px;
+    border: 1px solid rgba(0, 0, 0, 0.281);
+    border-radius: 7px;
+    margin-right: 5px;
+    margin-bottom: 10px;  
+    padding-top: 15px ;
+    font-size: 15px;
+    padding: 15px 0 10px 5px;
+    outline: none;
+    
+}
+.email:hover{
+    animation: ho 360ms linear forwards
+}
+.senha{
+    width: 350px;
+    border: 1px solid rgba(0, 0, 0, 0.281);
+    border-radius: 7px;
+    margin-right: 5px;
+    margin-bottom: 10px; 
+    padding-top: 15px;
+    font-size: 15px;
+    padding: 15px 0 10px 5px;
+    outline: none;
+}
+.senha:hover{
+    animation: ho 360ms linear forwards
+
+}
+.csenha{
+    width: 350px;
+    border: 1px solid rgba(0, 0, 0, 0.281);
+    border-radius: 7px;
+    margin-right: 5px;
+    margin-bottom: 10px; 
+    padding-top: 15px;
+    font-size: 15px;
+    padding: 15px 0 10px 5px;
+    outline: none;
+}
+.csenha:hover{
+    animation: ho 360ms linear forwards
+}
+
+
+.Env{
+    font-family: 'Poppins';
+    font-size: 18px;
+    text-align: center;
+    background-color: #007090;
+    width: 358px;
+    height: 43px;
+    border-radius: 7px;
+    margin-right: 5px; 
+    cursor: pointer; 
+    color: white;
+    border: none;
+
+}
+.Env:hover{
+    animation: env 500ms linear forwards;
+}
+
+@keyframes env{
+    from{
+       
+    }
+    to{
+        border: none;
+        background-color: #005066;
+    }
+}
+.cnt{
+    position: relative;
+
+    left: 3px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.cnt a{
+    margin-top: 0;
+    text-decoration: none;
+    color: #007090;
+
+}
+.cnt a:hover{
+    animation: out 500ms linear forwards;
+    
+}
+
+@keyframes out {
+    
+    to{
+        transition: 3s;
+        text-decoration: underline;
+        
+    }
+
+}
+

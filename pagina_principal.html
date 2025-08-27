@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STYLE</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+
+    <link rel="stylesheet" href="pag_principal.css">
+
+</head>
+<body>
+        <header>
+            <main class="menu-topo">
+                
+                <img src="imagens/logo.style02.150.png" alt="imagem" class="logo">
+
+                <a href="login.html"><i class="fa-regular fa-circle-user" id="login"></i></a>
+                         
+                                    <i class="fa-solid fa-bars" id="bars"></i>
+                
+
+                
+                    <nav class="links-menu">
+                        <a href="#" class="primeiro" onclick="clickHOME()">HOME<i class="fa-solid fa-angle-down"></i></a>
+                        <a href="#" class="segundo" onclick ="clickPRODUTOS()">PRODUTOS<i class="fa-solid fa-angle-down"></i></a>  
+                        <a href="#" class="terceiro" onclick="clickESTOQUE()">ESTOQUE<i class="fa-solid fa-angle-down"></i></a>                          
+                        <a href="#" class="quarto" onclick="clickFALECONOSCO()">FALE CONOSCO<i class="fa-solid fa-angle-down"></i></a>
+                        
+                    </nav>   
+
+            </main>
+
+                    <nav>
+                        <ul id="HOME" type="none">
+                            <a href="#">
+                                <li>voltar</li>
+                            </a>
+                            <a href="login.html">
+                                <li>login</li>
+                            </a>
+                            <a href="#">
+                                <li>suporte</li>
+                            </a>
+                        </ul>
+                    </nav>
+                   
+                    <nav>
+                        
+                        <ul id="PRODUTOS" type="none">
+                            
+                            <a href="#">
+                                <li>Camisetas</li>
+                            </a>
+
+                            <a href="#">
+                                <li>Shorts</li>
+                            </a>
+                            <a href="#">
+                                <li>casacos</li>
+                            </a>
+                        </ul>
+                        <ul id="ESTOQUE" type="none">
+                            <a href="#">
+                                <li>Overside</li>
+                            </a>
+
+                            <a href="#">
+                                <li>Premium</li>
+                            </a>
+                            <a href="#">
+                                <li>basica</li>
+                            </a>
+                        </ul>
+                        <ul id="FALE_CONOSCO" type="none">
+                            <a href="#">
+                                <li>Suporte</li>
+                            </a>
+
+                            <a href="#">
+                                <li>Redes sociais</li>
+                            </a>
+                            <a href="#">
+                                <li>Endereço</li>
+                            </a>
+                        </ul>
+                    </nav>
+
+
+                    <article id="thug">
+                        
+                        <h2>CAMISAS THUG-NINE</h2>
+    <div class="container">
+        <div class="img"></div>     
+        <div class="ttl"><strong>TÍTULO DO PRODUTO</strong></div>
+        <DIV class="p">Informações e Detalhes do produto</DIV>
+        <div class="dn"><strong>$ 499,99</strong></i></div>
+        <div><i class="fa-solid fa-cart-shopping"></i></div>
+        
+        <div class="img"></div>     
+        <div class="ttl"><strong>TÍTULO DO PRODUTO</strong></div>
+        <DIV class="p">Informações e Detalhes do produto</DIV>
+        <div class="dn"><strong>$ 499,99</strong></i></div>
+        <div><i class="fa-solid fa-cart-shopping"></i></div>
+    
+        </div>
+
+                         
+                    
+                        
+
+
+                    
+                        
+                   
+
+
+
+
+                    </article>
+
+
+                    
+                    <!--<i class="fa-solid fa-bars"></i><!-->
+
+        </header>
+
+        <script>
+        var home = document.getElementById("HOME");
+        var produtos = document.getElementById("PRODUTOS");
+        var estoque = document.getElementById("ESTOQUE");
+        var faleConosco = document.getElementById("FALE_CONOSCO");
+        var iconhome = document.getElementsByClassName('primeiro')[0]  
+        var iconprodutos = document.getElementsByClassName('segundo')[0]
+        var iconestoque = document.getElementsByClassName('terceiro')[0]
+        var iconfaleconosco = document.getElementsByClassName('quarto')[0]
+
+        function clickHOME() {
+        if (getComputedStyle(home).display === 'block') {
+            home.style.display = 'none';
+            iconhome.innerHTML = `HOME <i class="fa-solid fa-angle-down"></i>`;
+
+        } else {
+            home.style.display = 'block';
+            iconhome.innerHTML = `HOME <i class="fa-solid fa-angle-up"></i>`;
+        }
+
+
+    }
+
+        function clickPRODUTOS() {
+        if (getComputedStyle(produtos).display === 'block') {
+            produtos.style.display = 'none';
+            iconprodutos.innerHTML = `PRODUTOS <i class="fa-solid fa-angle-down"></i>`;
+
+        } else {
+            produtos.style.display = 'block';
+            iconprodutos.innerHTML = `PRODUTOS <i class="fa-solid fa-angle-up"></i>`;
+        }
+    }
+
+
+        function clickESTOQUE() {
+        if (getComputedStyle(estoque).display === 'block') {
+            estoque.style.display = 'none';
+            iconestoque.innerHTML = `ESTOQUE <i class="fa-solid fa-angle-down"></i>`;
+
+        } else {
+            estoque.style.display = 'block';
+            iconestoque.innerHTML = `ESTOQUE <i class="fa-solid fa-angle-up"></i>`;
+        }
+    }
+
+
+        function clickFALECONOSCO() {
+        if (getComputedStyle(faleConosco).display === 'block') {
+            faleConosco.style.display = 'none';
+            iconfaleconosco.innerHTML = `FALE CONOSCO <i class="fa-solid fa-angle-down"></i>`;
+
+        } else {
+            faleConosco.style.display = 'block';
+            iconfaleconosco.innerHTML = `FALE CONOSCO <i class="fa-solid fa-angle-up"></i>`;
+        }
+    }
+
+
+
+
+        </script>
+
+           
+</body>
+</html>
